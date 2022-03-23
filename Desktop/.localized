@@ -1,0 +1,6 @@
+`~
+cd Desktop # cd stands for change directory, and we use it to navigate
+mkdir test-vs-code # mkdir is the terminal command to create a new folder
+cd test-vs-code
+touch index.html # touch is a terminal command that allows us to create files
+code index.html # this line allows us to open index.html using VS Code

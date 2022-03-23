@@ -1,0 +1,30 @@
+body {
+    background-color: paleturquoise;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    color: rgb(238, 130, 238) !important;
+}
+// in order to reference a class you have to use a period //
+.sub-header { 
+    color:  ;
+}
+// in order to reference an id, you have to use the hash symbol */
+#block {
+    color: rgb(50, 173, 50);
+}
+ul > li {
+    background-color: rgb(138, 43, 226);
+    color: rgb(253, 250, 250);
+}}
+
+
+
+
+
+
+
+
+
