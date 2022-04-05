@@ -35,7 +35,6 @@ yo.onload = function() {
             this.y = Math.random()* canvas.height;
             this.w = 20;
             this.h = 20;
-    
         }
       }
     
@@ -51,7 +50,7 @@ function addEnemie(){
 let int;
 
 function startGame() {
-    int = setInterval(addEnemie, 300);
+    int = setInterval(addEnemie, 20);
      animate();
 }
 
@@ -76,6 +75,20 @@ for (let i = 0; i < enemieArr.length; i++){
     enemieArr[i].h );
 
 }
+}
+
+
+function gameOver() {
+  window.cancelAnimationFrame(game);
+  clearInterval(int);
+  ctx.fillStyle = "black";
+  ctx.fillRect(0, 0, w, h);
+  ctx.fillStyle = "red";
+  ctx.font = "50px sans-serif";
+  ctx.fillText("GAME OVER", 100, 100);
+  ctx.fillStyle = "white";
+  ctx.font = "40px sans-serif";
+  ctx.fillText(`Final Score: ${player.score}`, 100, 300);
 }
 
 
