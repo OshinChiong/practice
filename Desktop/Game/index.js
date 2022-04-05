@@ -24,7 +24,7 @@ const h = canvas.height;
     let player = new Yoshi ();
 
 const yo = new Image();
-yo.src= "/yoshi caminando.gif";
+yo.src= "/images/yoshi caminando.gif";
 yo.onload = function() {
     ctx.drawImage (yo, player.x, player.y, player.w, player.h);
 };
@@ -50,7 +50,7 @@ function addEnemie(){
 let int;
 
 function startGame() {
-    int = setInterval(addEnemie, 20);
+    int = setInterval(addEnemie, );
      animate();
 }
 
@@ -67,7 +67,7 @@ function animate() {
   
 for (let i = 0; i < enemieArr.length; i++){
   let image = new Image();
-  image.src = "/enemigo.jpg";
+  image.src = "/images/enemigo.jpg";
   ctx.drawImage(image,
     enemieArr[i].x, 
     enemieArr[i].y, 
@@ -75,20 +75,6 @@ for (let i = 0; i < enemieArr.length; i++){
     enemieArr[i].h );
 
 }
-}
-
-
-function gameOver() {
-  window.cancelAnimationFrame(game);
-  clearInterval(int);
-  ctx.fillStyle = "black";
-  ctx.fillRect(0, 0, w, h);
-  ctx.fillStyle = "red";
-  ctx.font = "50px sans-serif";
-  ctx.fillText("GAME OVER", 100, 100);
-  ctx.fillStyle = "white";
-  ctx.font = "40px sans-serif";
-  ctx.fillText(`Final Score: ${player.score}`, 100, 300);
 }
 
 

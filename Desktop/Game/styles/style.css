@@ -25,7 +25,7 @@ body {
   
   canvas {
     border: 1px solid black;
-   background-image: url(/isla\ gif.webp);  
+   background-image: url(/images/isla\ gif.webp);  
     background-repeat: no-repeat;
     background-size: cover;
   }
